@@ -19,21 +19,7 @@ data=pd.read_csv('df_test_sample.csv')
 listid=data['SK_ID_CURR'].tolist()
 
 
-@app.route('/shap', methods=['POST'])
-def graph_data():
 
-     rowshap = request.get_json()
-     
-     shap_val_all=np.load('shap-values.npy')
-
-    
-
-     needed_shap_val=shap_val_all[rowshap].data.tolist()
-
-  
-
-
-     return jsonify({'shap_values':needed_shap_val})
 
 
 @app.route('/predict', methods=['POST'])
