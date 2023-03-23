@@ -23,14 +23,15 @@ listid=data['SK_ID_CURR'].tolist()
 
 
 @app.route('/predict', methods=['POST'])
-def predict():
+print('bonjour')
+'''def predict():
     iddic=request.get_json(force=True)
     idval = iddic.values()
     id = int(list(idval)[0])
     x=data.loc[data['SK_ID_CURR'] == id]
     y=model.predict_proba(x, num_iteration=model.best_iteration_)[:, 1]
     return jsonify(y.tolist())
-
+'''
 if __name__ == '__main__':
-    app.run(debug=False,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))
+    app.run(debug=False,host='0.0.0.0',port=int(os.environ.get('PORT', 6502)))
 
