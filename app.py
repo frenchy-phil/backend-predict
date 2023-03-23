@@ -23,7 +23,7 @@ listid=data['SK_ID_CURR'].tolist()
 
 
 @app.route('/predict', methods=['POST'])
-print('bonjour')
+    print('bonjour')
 '''def predict():
     iddic=request.get_json(force=True)
     idval = iddic.values()
