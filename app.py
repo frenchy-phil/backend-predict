@@ -43,3 +43,6 @@ def predict():
     y=model.predict_proba(x, num_iteration=model.best_iteration_)[:, 1]
     return jsonify(y.tolist())
 
+if __name__ == '__main__':
+    app.run()
+
