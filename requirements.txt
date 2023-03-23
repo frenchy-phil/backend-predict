@@ -3,7 +3,6 @@ flask
 joblib
 numpy
 shap
-pickle
 pandas
 lightgbm
 json
