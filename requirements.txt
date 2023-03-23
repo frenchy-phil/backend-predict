@@ -1,6 +1,6 @@
 gunicorn==20.0.4
 flask
-joblib
+pickle5
 numpy
 shap
 pandas
