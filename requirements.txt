@@ -4,7 +4,6 @@ joblib
 numpy
 shap
 pandas
-
-json
-sklearn
+pypi-json
+scikit-learn
 utils
