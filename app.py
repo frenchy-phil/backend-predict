@@ -13,7 +13,7 @@ from utils import tokenize
 app = Flask(__name__)
 
 
-model = joblib.load(open('model2.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 data=pd.read_csv('df_test_sample.csv')
 #valid_x=pd.read_csv('valid_x2.csv')
 listid=data['SK_ID_CURR'].tolist()
