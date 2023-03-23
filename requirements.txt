@@ -4,7 +4,7 @@ joblib
 numpy
 shap
 pandas
-lightgbm
+
 json
 sklearn
 utils
