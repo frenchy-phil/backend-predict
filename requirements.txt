@@ -1,1 +1,11 @@
 gunicorn==20.0.4
+flask
+joblib
+numpy
+shap
+pickle
+pandas
+lightgbm
+json
+sklearn
+utils
